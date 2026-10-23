@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "project-memory",
+  "displayName": "Project Memory",
+  "description": "Memoria operacional portatil e progressiva para projetos de longa duracao.",
+  "author": {
+    "name": "Estevao Eller",
+    "url": "https://github.com/estevaoeller"
+  },
+  "homepage": "https://github.com/estevaoeller/project-memory",
+  "repository": "https://github.com/estevaoeller/project-memory",
+  "license": "MIT",
+  "keywords": ["memory", "project", "documentation", "workflow", "agents"],
+  "skills": "./skills/"
+}

@@ -1,0 +1,15 @@
+# Credenciais e segredos
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials/
+
+# Temporários
+~$*
+*.tmp
+*.bak
+__pycache__/
+
+# Acrescente arquivos sensíveis ou volumosos específicos do projeto.
