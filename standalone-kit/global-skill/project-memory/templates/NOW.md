@@ -1,6 +1,6 @@
 # Estado atual
 
-Atualizado em: 2026-09-22
+Atualizado em: {{DATE}}
 Atualizado por: inicialização
 
 ## Em andamento

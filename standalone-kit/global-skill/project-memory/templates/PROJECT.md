@@ -1,4 +1,4 @@
-# Skills-Lab
+# {{PROJECT_NAME}}
 
 ## Finalidade
 

@@ -17,7 +17,7 @@ A skill `project-memory`, contendo:
 ## Instalar pelo marketplace
 
 ```text
-/plugin marketplace add estevaoeller/agent-skills-marketplace
+/plugin marketplace add estevaoeller/Skills
 /plugin install project-memory@estevaoeller-skills
 ```
 
