@@ -9,16 +9,20 @@ Lida no início da sessão:
 - `AGENTS.md`: protocolo de trabalho;
 - `PROJECT.md`: contexto estável, escopo e restrições;
 - `NOW.md`: situação atual e próximos passos;
-- `TASKS.md`: atividades do projeto e fila dos agentes.
+- `TASKS.md`: pendências agrupadas por frente; decisões da pessoa começam com `Usuário:`.
 
 ### Conhecimento
 
-- `.wiki/INDEX.md`: mapa do conhecimento;
+- `_wiki/INDEX.md`: mapa do conhecimento;
 - demais páginas: abertas somente quando pertinentes.
+
+Regras fixas da pessoa ficam no topo do `PROJECT.md`. A seção "Configuração da memória" do `PROJECT.md` guarda o modo de
+frontmatter e o local do registro de achados.
 
 ### Histórico
 
-- `history/`: registros de execuções, decisões, incidentes e mudanças relevantes;
+- `history/`: decisões (premissa, motivo), trajetória (paredes, mudanças de direção), diários por frente e blocos encerrados do
+  `NOW.md` e do `TASKS.md`;
 - nunca deve ser lido integralmente por padrão.
 
 ## 2. Estrutura adaptativa
@@ -39,11 +43,17 @@ O agente deve:
 
 1. ler `PROJECT.md`, `NOW.md` e `TASKS.md`;
 2. identificar o que falta para a tarefa atual;
-3. consultar `.wiki/INDEX.md` somente quando precisar de conhecimento adicional;
+3. consultar `_wiki/INDEX.md` somente quando precisar de conhecimento adicional;
 4. abrir apenas os arquivos pertinentes;
 5. pesquisar `history/` apenas para recuperar precedente, decisão, erro ou execução específica.
 
-## 4. Rastreabilidade
+## 4. Registro
+
+Ao fim de cada passo com gatilho (decisão, parede, achado, regra, pendência, arquivo alterado), o agente registra sem esperar
+pedido, cada coisa no seu destino (`skills/project-memory/references/destinos.md`), e fecha com a linha `Registrado em:`.
+Pedido repetido vira regra no `AGENTS.md`. `NOW.md` fica com até cerca de 150 linhas: o encerrado vai para o `history/`.
+
+## 5. Rastreabilidade (opcional)
 
 Execuções relevantes podem gerar um arquivo curto em `history/`, contendo:
 
@@ -57,7 +67,7 @@ Execuções relevantes podem gerar um arquivo curto em `history/`, contendo:
 
 Informações não confirmadas devem ser registradas como `unknown`. O agente não deve inferir o modelo.
 
-## 5. Validação
+## 6. Validação
 
 Resultados produzidos por IA podem usar:
 
@@ -69,7 +79,7 @@ Resultados produzidos por IA podem usar:
 
 Conclusão de execução não equivale a validação humana.
 
-## 6. Fonte da verdade
+## 7. Fonte da verdade
 
 - Markdown: estado, conhecimento e histórico legível;
 - Git: alterações, autoria técnica e reversão;

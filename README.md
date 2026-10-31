@@ -9,8 +9,10 @@ A skill `project-memory`, contendo:
 - protocolo de leitura minima;
 - estado atual em `NOW.md`;
 - tarefas em `TASKS.md`;
-- conhecimento duravel em `.wiki/`;
+- conhecimento duravel em `_wiki/` (o sublinhado mantem a pasta no topo da listagem);
 - historico consultado apenas quando necessario;
+- registro automatico ao fim de cada passo relevante, com destino certo para cada tipo de informacao;
+- frontmatter portatil (Obsidian) opcional na `_wiki/` e no `history/`;
 - script de inicializacao;
 - modelos para Claude Code, Codex, Goose e outros agentes.
 
@@ -43,6 +45,10 @@ python scripts/init_project.py /caminho/do/projeto --name "Nome do projeto" --gi
 
 O script preserva arquivos existentes por padrao. Use `--force` somente quando quiser substitui-los.
 
+Frontmatter da `_wiki/` e do `history/`: `--frontmatter perfil` (padrao: nucleo + perfil de trabalho), `nucleo` ou `nenhum`.
+No modo `perfil`, `--client`, `--engagement` e `--organization` preenchem o perfil. Pelo agente, a skill faz essas perguntas
+antes de criar o projeto, e quem escolhe "padrao" pula todas.
+
 ## Estrutura criada no projeto
 
 ```text
@@ -51,8 +57,12 @@ CLAUDE.md
 PROJECT.md
 NOW.md
 TASKS.md
-.wiki/INDEX.md
+_wiki/INDEX.md
+_wiki/_modelo-pagina.md
 history/README.md
+history/_modelo-registro.md
+.claude/skills/project-memory/
+.agents/skills/project-memory/
 ```
 
 A estrutura deve crescer conforme necessidades reais, sem criar antecipadamente categorias vazias.

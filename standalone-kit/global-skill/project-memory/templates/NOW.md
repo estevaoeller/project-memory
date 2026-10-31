@@ -1,26 +1,17 @@
-# Estado atual
+# Situação atual
 
-Atualizado em: {{DATE}}
-Atualizado por: inicialização
+Atualizado em {{DATE}}.
 
-## Em andamento
+Seções datadas, a mais nova no topo. Quando uma seção deixar de ser atual, mova o texto para o `history/` do tema e deixe aqui
+uma linha com o link. Meta: até cerca de 150 linhas.
 
-- Nenhum item registrado.
+## {{DATE}}: estrutura inicial
 
-## Concluído recentemente
+- Feito: estrutura de memória criada.
+- Aberto: definir o primeiro objetivo.
+- **Pessoa decide:** nada pendente.
+- Próximo: registrar as atividades em `TASKS.md`.
 
-- Estrutura inicial criada.
+## Encerrado (ver history)
 
-## Bloqueios e pendências
-
-- Definir o primeiro objetivo operacional.
-
-## Próximos passos
-
-1. Registrar as atividades em `TASKS.md`.
-2. Acrescentar ao `PROJECT.md` apenas o contexto estável necessário.
-
-## Consulte quando necessário
-
-- Índice de conhecimento: `.wiki/INDEX.md`
-- Histórico: `history/`
+- Nenhum bloco movido ainda.

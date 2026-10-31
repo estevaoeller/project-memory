@@ -1,10 +1,10 @@
-# Project Memory Wiki Kit — V3 Adaptive
+# Project Memory Wiki Kit, versão 3.1
 
 Base portátil de memória operacional para projetos trabalhados por pessoas e agentes como Goose, Codex e Claude Code.
 
-> `global-skill/project-memory/` (SKILL.md, scripts, templates) é gerado a partir de
-> `plugins/project-memory/` na raiz do repositório — não edite esses arquivos aqui
-> diretamente. Edite a fonte e rode `python scripts/build_wiki_kit.py`.
+> `global-skill/project-memory/` (SKILL.md, references, scripts, templates) é gerado a partir
+> da raiz do repositório (`skills/`, `scripts/`, `templates/`). Não edite esses arquivos aqui
+> diretamente: edite a fonte e rode `python scripts/build_wiki_kit.py`.
 
 ## Princípio
 
@@ -14,7 +14,9 @@ A base define um protocolo mínimo, não uma taxonomia fixa:
 - conhecimento detalhado é consultado sob demanda;
 - o histórico é preservado sem ser carregado automaticamente;
 - pastas e páginas surgem conforme o projeto realmente precisa;
-- agente, provedor e modelo são registrados apenas em execuções relevantes.
+- o registro acontece sem pedido, ao fim de cada passo relevante, cada coisa no seu destino;
+- nada se apaga: o superado ganha nota ou vai para `z.old/`;
+- agente, provedor e modelo são registrados só quando úteis para auditoria.
 
 ## Núcleo inicial
 
@@ -23,7 +25,7 @@ AGENTS.md
 PROJECT.md
 NOW.md
 TASKS.md
-.wiki/INDEX.md
+_wiki/INDEX.md
 history/
 ```
 

@@ -1,17 +1,42 @@
 # {{PROJECT_NAME}}
 
+## REGRAS FIXAS (ler antes de qualquer trabalho)
+
+Regras definidas pela pessoa responsável, que só ela muda. Uma linha cada, com data e link para a página da wiki com a íntegra.
+
+- Nenhuma regra registrada.
+
+## QUESTÃO CENTRAL
+
+> A pergunta que o projeto precisa responder, em uma frase.
+
 ## Finalidade
 
-Descreva em poucas linhas por que o projeto existe e qual resultado pretende produzir.
+Por que o projeto existe e qual resultado pretende produzir.
 
 ## Escopo atual
 
 - Incluído:
 - Não incluído:
 
-## Contexto estável
+## Pastas
 
-Registre somente informações que tendem a permanecer válidas por várias sessões.
+| Pasta | O que guarda |
+|---|---|
+| `_wiki/` | conhecimento durável; entrada em `_wiki/INDEX.md` |
+| `history/` | decisões, trajetória e diários por frente; não é lido automaticamente |
+| `PERGUNTAS.md` | perguntas a terceiros, criado na primeira; ID, motivo, o que fica assumido, prioridade |
+| `z.old/` | material superado, mesma estrutura da origem; nada é apagado sem a pessoa |
+
+## Configuração da memória
+
+Escolhida na criação do projeto. Os agentes seguem esta seção ao escrever na `_wiki/` e no `history/`.
+
+- Frontmatter: {{FRONTMATTER_MODE}}
+- Cliente: {{CLIENT}}
+- Contrato: {{ENGAGEMENT}}
+- Organização: {{ORGANIZATION}}
+- Achados: `_wiki/achados.md` (troque se o trabalho tiver registro próprio)
 
 ## Pessoas e responsabilidades
 
@@ -30,4 +55,3 @@ Registre somente informações que tendem a permanecer válidas por várias sess
 - Não sobrescrever originais.
 - Não registrar senhas, tokens ou credenciais.
 - Não enviar dados a serviços externos sem autorização.
-- Acrescente aqui regras específicas do projeto.

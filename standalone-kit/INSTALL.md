@@ -16,6 +16,9 @@ python3 global-skill/project-memory/scripts/init_project.py /caminho/do/projeto 
 
 O script não sobrescreve arquivos existentes, salvo com `--force`.
 
+Frontmatter da `_wiki/` e do `history/`: `--frontmatter perfil` (padrão), `nucleo` ou `nenhum`. No modo `perfil`, use também
+`--client`, `--engagement` e `--organization`.
+
 ## Instalar a skill globalmente
 
 Copie a pasta:

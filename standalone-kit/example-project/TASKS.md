@@ -1,21 +1,17 @@
-# Tarefas
+# Pendências
 
-## Atividades do projeto
+Agrupadas por frente, com data de abertura. Decisões que cabem à pessoa começam com `Usuário:`. Item feito fica marcado com a
+evidência; quando a frente fechar, mova o bloco para o `history/` do tema e deixe uma linha com o link.
 
-| ID | Atividade | Responsável | Status | Prazo | Próximo passo |
-|---|---|---|---|---|---|
-| ACT-001 | Definir primeiro objetivo operacional | A definir | BACKLOG | — | Detalhar a atividade |
+## Frente: estrutura inicial (2026-10-31)
 
-## Fila dos agentes
+- [x] Criar a estrutura de memória.
+- [ ] Usuário: definir o primeiro objetivo operacional.
 
-| ID | Solicitação | Solicitado por | Agente | Modelo | Status da execução | Validação | Evidência |
-|---|---|---|---|---|---|---|---|
-| AGT-001 | — | — | — | unknown | BACKLOG | — | — |
+## Encerradas (ver history)
 
-## Status de execução
+- Nenhuma.
 
-`BACKLOG`, `READY`, `IN_PROGRESS`, `BLOCKED`, `REVIEW`, `DONE`, `CANCELLED`.
-
-## Status de validação
+## Marcas de validação
 
 `AI_PROPOSED`, `REQUIRES_REVIEW`, `HUMAN_VALIDATED`, `REJECTED`, `SUPERSEDED`.
